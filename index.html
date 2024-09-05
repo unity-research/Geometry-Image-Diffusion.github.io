@@ -742,36 +742,26 @@ structures, enhancing both usability and versatility            </p>
 
                 <h3> Method </h3>
                    <figure class="image">
-                     <img src="Collaborative%20Control%20for%20Geometry-Conditioned%20PBR%20Image%20Generation_files/Method.PNG" style="width: 75%; height: auto;">
+                     <img src="Collaborative%20Control%20for%20Geometry-Conditioned%20PBR%20Image%20Generation_files/Method.PNG" style="width: 100%; height: auto;">
                      <figcaption>In order to attain our the Collaborative Control scheme where two separate diffusion models generate respectively albedo textures and geometry
 images. The former is a pre-trained and frozen text-to-image model, while the latter is the identical architecture trained from scratch</figcaption>
                   </figure>
 
-                  <figure class="image">
-                    <img src="Collaborative%20Control%20for%20Geometry-Conditioned%20PBR%20Image%20Generation_files/Cross_Attention.png">
-                    <figcaption>We use the same cross attention input scheme as the original IP-Adapter </figcaption>
-                  </figure>
-
-                  <h3> Plug &amp; Play </h3>
 
                   <figure class="image">
-                    <img src="Collaborative%20Control%20for%20Geometry-Conditioned%20PBR%20Image%20Generation_files/controlnet.png">
-                  </figure>
+                    <img src="Collaborative%20Control%20for%20Geometry-Conditioned%20PBR%20Image%20Generation_files/Examples.PNG"style="width: 75%; height: auto;">
+					<figcaption>Additional generation examples
+				  </figure>
+                <h3> Compatibility </h3>
                   <p>
-                    Since our method keeps original cross attention input scheme, it is compatible with any existing control method to the same degree as IP-Adapter.                    <br>
-                    This feature vastly expands the usability of our method in practical scenarios.
+                    Our method is also compatible with IP-Adapter, allowing both image-to-3D and consistently styled generations
                   </p>
                   <figure class="image">
-                    <img src="Collaborative%20Control%20for%20Geometry-Conditioned%20PBR%20Image%20Generation_files/other_models.png">
+                    <img src="Collaborative%20Control%20for%20Geometry-Conditioned%20PBR%20Image%20Generation_files/IPAdapter.PNG"style="width: 75%; height: auto;">
                   </figure>
-                  <p>
-                    This functionality also extends to compatability with other sd 1.5 based models.
-                  </p>
 
-                    <figure class="image">
-                      <img src="Collaborative%20Control%20for%20Geometry-Conditioned%20PBR%20Image%20Generation_files/header.PNG">
-                      <figcaption>Further examples</figcaption>
-                    </figure>
+
+    
 
    
 
@@ -791,43 +781,6 @@ images. The former is a pre-trained and frozen text-to-image model, while the la
     </div>
   </section>
 
-  <section class="section">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column">
-          <!-- Spaces Demo -->
-          <div class="columns is-centered">
-            <div class="column is-full-width">
-              <h2 class="title is-3">Interactive Demonstration</h2>
-
-              <div class="content has-text-justified">
-                <p>
-                  We provide an interactive demonstration of our method using Huggingface Spaces based Gradio demo.
-                  You can try out our method with your own input images and see the results in real-time.
-                </p>
-                <p>
-                   https://huggingface.co/spaces/CiaraRowles/IP-Test
-                </p>
-                <p>
-                </p><h3>How to use: </h3>
-                <ol>
-                  <li>Upload an input image.</li>
-                  <li>Use an instruction preset</li>
-                  <li>Enter a prompt in the text box.</li>
-                  <li>Click Generate</li>
-				  <iframe
-					src="https://unity-IP-Adapter-Instruct.hf.space"
-					frameborder="0"
-					width="1500"
-					style="height: 100vh;"
-                  ></iframe>
-
-              </div>
-            </div>
-          </div>
-          <!--/ Gradio Demo -->
-        </div>
-  </div></div></section>
 
 
 
